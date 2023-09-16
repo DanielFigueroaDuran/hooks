@@ -53,12 +53,17 @@ function App() {
                 <PokeList />
             </div> */}
             <div className='containerJoke'>
-                <Button text={"Birds"} setCategories={setCategories} />
-                <Button text={"Car"} setCategories={setCategories} />
-                <Button text={"Hipster"} setCategories={setCategories} />
-                <Button text={"Dad"} setCategories={setCategories} />
+                <Button text={"Birds"} setCategories={setCategories} setIsLoading={setIsLoading} />
+                <Button text={"Car"} setCategories={setCategories} setIsLoading={setIsLoading} />
+                <Button text={"Hipster"} setCategories={setCategories} setIsLoading={setIsLoading} />
+                <Button text={"Dad"} setCategories={setCategories} setIsLoading={setIsLoading} />
             </div>
-            <JokeList jokes={jokes} />
+            <div className='containerLoading'>
+                {isLoading
+                    ? <Loading />
+                    : <JokeList jokes={jokes} />
+                }
+            </div>
         </>
 
     )

@@ -16,8 +16,7 @@ const ColorTheme = ({ setIsLoading, isLoading, setDark, dark }) => {
         setTimeout(() => {
             setIsLoading(false);
         }, 1000);
-        //console.log(loading);
-        //console.log(dark);
+       
     }
 
     return (

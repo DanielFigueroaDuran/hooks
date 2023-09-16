@@ -1,10 +1,18 @@
 import React from 'react'
 import "./dadJokes.css"
 
-const ButtonJoke = ({ setCategories, text }) => {
+const ButtonJoke = ({ setCategories, text, setIsLoading }) => {
 
   const handleClick = () => {
   setCategories(text);
+
+  setIsLoading(true);
+
+  setTimeout(() => {
+    setIsLoading(false)
+  }, 1000);
+
+
     // if (text === 'Car') {
     //   setCategories('car');
     // }else if(text === 'Birds'){

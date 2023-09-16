@@ -44,5 +44,11 @@
     border: 2px solid rgb(10, 233, 147);
     border-radius: 6px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
 
+.containerLoading{
+    margin-top: 30px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
