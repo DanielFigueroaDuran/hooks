@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .container{
+    display: flex;
+     width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+} */
+
+.containerApp{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.light{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+.dark{
+    background: #000;
+    color: #fff;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid rgb(10, 233, 147);
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+
+}

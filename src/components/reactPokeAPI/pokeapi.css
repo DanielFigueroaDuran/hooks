@@ -1,0 +1,63 @@
+.containerPoke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid rgb(21, 20, 20);
+    border-radius: 6px;    
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.containerCardPar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 200px;
+    background: rgb(60, 60, 250);
+    color: #fff;
+}
+
+.containerCardImpar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 200px;
+    background: rgb(12, 190, 50);
+    color: #fff;
+}
+
+.btn{
+    width: 200px;
+ border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.btnCard{
+width: 100px;
+ border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+
+.impar{
+    background: rgb(72, 18, 232);
+}
+
+.par{
+    background: rgb(6, 207, 153);
+}

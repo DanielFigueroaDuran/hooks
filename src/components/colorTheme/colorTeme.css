@@ -1,0 +1,44 @@
+.containerTheme{
+width: 400px;
+}
+
+.light{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid red;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+.dark{
+    background: #000;
+    color: #fff;
+     /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid rgb(10, 233, 147);
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+
+}
+
+p{
+    text-align: center;
+}
+
+.btnTeme{
+    background: white;
+    color:black;
+    border: 1px solid black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+   /* box-shadow: 3px 3px 10px 2px crimson; */
+}
