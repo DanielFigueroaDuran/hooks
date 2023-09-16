@@ -1,0 +1,11 @@
+.containerJoke {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.btnJoke {
+    background: rgb(99, 82, 175);
+    color: #fff;
+    border: none;
+}
