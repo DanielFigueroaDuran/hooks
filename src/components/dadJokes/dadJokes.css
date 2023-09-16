@@ -8,4 +8,28 @@
     background: rgb(99, 82, 175);
     color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+.containerJokes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.cardJoke{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(105, 105, 206);
+    color: #fff;    
+    border-radius: .5rem;
+}
+
+.btnJoke:hover{
+    background: rgb(105, 105, 206);
 }

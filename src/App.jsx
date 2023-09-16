@@ -5,28 +5,30 @@ import ColorTheme from "./components/colorTheme/ColorTheme";
 import Loading from "./components/SpinnerComponent/Loading";
 import PokeList from './components/reactPokeAPI/PokeList';
 import Button from './components/dadJokes/ButtonJoke';
+import JokeList from './components/reactPokeAPI/JokeList';
 
 
 function App() {
     const [dark, setDark] = useState("light");
     const [isLoading, setIsLoading] = useState(false);
+
     const [categories, setCategories] = useState("");
     const [jokes, setJokes] = useState([]);
 
     const apiDadJoke = `https://icanhazdadjoke.com/search?term=${categories}&limit=5`;
 
     const getData = async (url) => {
-            const response = await fetch(url, {
-                headers: {
-                    "Accept": "application/json",
-                }
-            });
-            const data = await response.json();
-            const newData = data.results;
+        const response = await fetch(url, {
+            headers: {
+                "Accept": "application/json",
+            }
+        });
+        const data = await response.json();
+        const newData = data.results;
 
-            //console.log(newData);
-            //setJokes(newData);
-            return newData;
+        //console.log(newData);
+        //setJokes(newData);
+        return newData;
     };
 
 
@@ -34,7 +36,7 @@ function App() {
         getData(apiDadJoke).then(data => setJokes(data));
     }, [categories])
 
-console.log(categories);
+    //console.log(categories);
 
     return (
         <>
@@ -56,6 +58,7 @@ console.log(categories);
                 <Button text={"Hipster"} setCategories={setCategories} />
                 <Button text={"Dad"} setCategories={setCategories} />
             </div>
+            <JokeList jokes={jokes} />
         </>
 
     )
