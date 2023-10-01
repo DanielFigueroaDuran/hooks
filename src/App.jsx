@@ -6,6 +6,7 @@ import Loading from "./components/SpinnerComponent/Loading";
 import PokeList from './components/reactPokeAPI/PokeList';
 import Button from './components/dadJokes/ButtonJoke';
 import JokeList from './components/reactPokeAPI/JokeList';
+import ShoppingCart from './components/carritoDeComprasReducer/ShoppingCart';
 
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
             <div className='containerApp'>
                 <PokeList />
             </div> */}
-            <div className='containerJoke'>
+            {/* <div className='containerJoke'>
                 <Button text={"Birds"} setCategories={setCategories} setIsLoading={setIsLoading} />
                 <Button text={"Car"} setCategories={setCategories} setIsLoading={setIsLoading} />
                 <Button text={"Hipster"} setCategories={setCategories} setIsLoading={setIsLoading} />
@@ -63,7 +64,11 @@ function App() {
                     ? <Loading />
                     : <JokeList jokes={jokes} />
                 }
-            </div>
+            </div> */}
+
+            {/* Carrito de compras con reducer */}
+
+            <ShoppingCart/>
         </>
 
     )
